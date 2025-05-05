@@ -15,6 +15,7 @@ pipeline {
         stage('Executar Testes') {
             steps {
                 bat '''NO_COLOR = 1
+                bat 'start /b npm start'
                 npm test'''
             }
         }
